@@ -39,8 +39,11 @@ print("\n")
 #new way of formatting strings using f-strings
 distance = 384400.26874
 unit = "km"
-message = f"Distance to Moon from Earth: {distance.2f} {unit}"
+message = f"Distance to Moon from Earth: {distance:.2f} {unit}"
 print(message)
 print("\n")
 
-
+fruits = ["Apple", "Mango", "Banana"]
+fruits.append("Orange") # append() method adds an item to the end of the list
+fruits[0] = "Grapes"
+print(fruits)

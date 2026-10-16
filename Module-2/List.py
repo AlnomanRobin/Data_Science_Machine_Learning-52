@@ -41,7 +41,7 @@ index_list = [0, 2, 3]
 for i in index_list:
     print(snacks[i])
 
-
+print("\n")
 party_bags = [
     ["Chips", "Cookies"],
     ["Cake", "Juice"],

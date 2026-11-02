@@ -13,6 +13,7 @@ karim = Son()
 karim.advice()
 karim.teach()
 print("\n")
+
 #Multiple Inheritance
 class Mother:
     def discipline(self):
@@ -27,3 +28,17 @@ class daughter(Mother, Uncle):
 ayesha = daughter()
 ayesha.discipline()
 ayesha.math()
+
+print("\n")
+
+#Method overloading
+class ReportCard:
+    def marks(self, math=None, english=None):
+        if math is not None and english is not None:
+            print(f"Math: {math}, English: {english}")
+        if math is not None:
+            print(f"Math: {math}")
+        else:
+            print("No marks provided.")
+karim_report = ReportCard()
+karim_report.marks(90, 85)
